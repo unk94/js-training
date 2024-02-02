@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+  <title>Exercices JavaScript</title>
+</head>
+<body>
+  <header class="bg-dark text-white text-center p-5">
+    <h1>Exercices JavaScript <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="logo js" width="50px"></h1>
+  </header>
+  <main class="container">
+    <div class="my-5 alert alert-warning text-center" role="alert">
+      Avant de commencer les exercices, il est important d'avoir les notions de bases en Javascript à savoir:
+      <ul>
+        <li>
+          <span class="fw-bold">les variables</span> et <span class="fw-bold">leurs types</span>,
+        </li>
+        <li>
+          <span class="fw-bold">les conditions</span>,
+        </li>
+        <li>
+          <span class="fw-bold">les boucles</span>,
+        </li>
+        <li>
+          <span class="fw-bold">les fonctions</span>,
+        </li>
+        <li>
+          quelques notions de <span class="fw-bold">POO</span> (Programmation Orientée Objet),
+        </li>
+        <li>
+          la manipulation du <span class="fw-bold">DOM</span>
+        </li>
+        <li>
+          <span class="fw-bold">les events</span>,
+        </li>
+        <li>
+          et l'utilisation de l'object <a target="_blank" class="text-decoration-none" href="https://developer.mozilla.org/fr/docs/Web/API/XMLHttpRequest"><span class="fw-bold">XMLHttpRequest</span></a>
+          ou de <a target="_blank" class="text-decoration-none" href="https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch"><span class="fw-bold">l'API Fetch</span></a> afin de faire des requêtes HTTP.
+        </li>
+      </ul>
+      <br><br>
+      Autre point d'attention: toujours garder à l'esprit des principes de programmation fondamentaux: <span class="fw-bold">DRY</span> (Don't Repeat Yourself) & <span class="fw-bold">KISS</span> (Keep It Simple Stupid),
+      aussi bien lors de l'étape de réfléxion que durant l'écriture du code.
+      <br><br>
+      Ouvrir le script JS <code>./script.js</code> dans votre IDE, c'est le seul fichier modifiable. Interdiction de toucher au fichier <code>./index.html</code>
+    </div>
+
+    <section class="mt-5 pt-5 exercises">
+      <article class="p-4 exercise bg-light">
+        <h2 class="fw-bold fs-3 mb-4 text-decoration-underline">Exercice 1 - Les variables</h2>
+        <div>
+          <ul>
+            <li>
+              <p>Créer 3 variables: un Number, un String et un Boolean. Afficher leur valeur dans un <code>console.log()</code></p>
+            </li>
+            <li>
+              <p>Afficher le <span class="fw-bold">type</span> de la variable <code>whatIsMyType</code> dans un <code>console.log()</code></p>
+            </li>
+            <li>
+              <p>Faire une concaténation en utilisant les variables <code>carBrand</code>, <code>price</code> et <code>currency</code> afin d'écrire la phrase suivante :
+                <span class="fw-bold">Une Tesla coûte plus de 40000 € tu sais !</span>, et afficher le résultat dans un <code>console.log()</code></p>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mt-5 p-4 exercise bg-light">
+        <h2 class="fw-bold fs-3 mb-4 text-decoration-underline">Exercice 2 - Les conditions, les boucles & les fonctions</h2>
+        <div>
+          <ul>
+            <li>
+              <p>Selon la valeur de la variable <code>johnAge</code>, créer une autre variable <code>legalAge</code> afin d'avoir l'information pour savoir si John est majeur ou non.</p>
+            </li>
+            <li>
+              <p>Parcourir le tableau <code>ages</code> afin de trouver le nombre d'adultes et de renseigner le résultat dans la variable <code>numberOfAdults</code></p>
+            </li>
+            <li>
+              <p>Créer la fonction <code>howManyAdults(ages)</code>, qui prend en paramètre un tableau <code>ages</code>, et renvoie le nombre d'adultes (personnes majeures)</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mt-5 p-4 exercise bg-light">
+        <h2 class="fw-bold fs-3 mb-4 text-decoration-underline">Exercice 3 - POO</h2>
+        <div>
+          <ul>
+            <li>
+              <p>Créer au moins deux instances valides de la class <code>Burger</code>, et afficher le résultat de la méthode <code>describe()</code> dans un <code>console.log()</code></p>
+            </li>
+            <li>
+              <p>Implémenter une nouvelle méthode <code>getPrice()</code> dans la classe <code>Burger</code>, sachant que:
+                Un burger classique coûte 8€, un burger veggie coûte 1€ de moins, et le prendre avec des frites ajoute 2€.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mt-5 p-4 exercise bg-light">
+        <h2 class="fw-bold fs-3 mb-4 text-decoration-underline">Exercice 4 - DOM</h2>
+        <div>
+          <ul>
+            <li>
+              <p>En manipulant le DOM, sélectionner <span id="training-dom" class="fw-bold training-dom">cet élément</span>, et afficher son contenu textuel dans un <code>console.log()</code></p>
+            </li>
+            <li>
+              <p>Retirer le dernier élément de la liste ci-dessous <code>.movies</code></p>
+              <ol class="movies mb-3">
+                <li>Titanic</li>
+                <li>Fight Club</li>
+                <li>Avengers End-Game</li>
+                <li>Drive</li>
+                <li>Forrest Gump</li>
+              </ol>
+            </li>
+            <li>
+              <p>En manipulant le DOM, récupérer le nombre d'éléments possédant la classe <code>.exercise</code>.
+                Afficher ce nombre dans l'élément ayant la classe <code>number-of-exercises</code> <span class="badge bg-primary">Nombre d'exercices: <span class="p-2 number-of-exercices"></span></span></p>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mt-5 p-4 exercise bg-light">
+        <h2 class="fw-bold fs-3 mb-4 text-decoration-underline">Exercice 5 - Les events</h2>
+        <div>
+          <ul>
+            <li>
+              <p>Afficher, dans un <code>console.log()</code>, la phrase suivante: <span class="fw-bold">Le DOM est prêt.</span> après être bien certain que le DOM ait été chargé entièrement.</p>
+            </li>
+            <li>
+              <p>
+                Incrémenter un compteur au click sur l'élément <code>.btn-counter</code>, et afficher ce résultat dans l'élément HTML <code>.btn-counter-value</code>
+                <button class="btn btn-primary btn-counter">Click me ! (Number of clicks: <span class="btn-counter-value">0</span>)</button>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="my-5 p-4 exercise bg-light">
+        <h2 class="fw-bold fs-3 mb-4 text-decoration-underline">Exercice 6 - API</h2>
+        <div>
+          Faire un appel API en utilisant Fetch ou XMLHttpRequest à l'api JSON Placeholder, à l'url: <code>https://jsonplaceholder.typicode.com/posts/1/comments</code>
+          Une fois l'appel fait et la donnée récupérée, il faut remplir le tableau <code>.table-comments</code> dans les colonnes correspondantes (1 ligne par commentaire récupéré).
+          <table class="mt-3 table table-bordered table-comments">
+            <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Post Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
